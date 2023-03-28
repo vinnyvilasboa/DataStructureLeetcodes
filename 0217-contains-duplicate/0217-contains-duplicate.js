@@ -4,12 +4,19 @@
  */
 
 var containsDuplicate = function(nums) {
-const toMap = {};
+const map = new Map();
 for (let num of nums){
-    if(toMap[num]){
+    if(map[num]){
        return true;
     }
-    toMap[num] = true;
+    map[num] = true;
 }
 return false;
 };
+
+//if nums array has at least one duplicate return true
+//if else return false
+
+// hash map
+// for of loop 
+// if Map has 
